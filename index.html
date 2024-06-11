@@ -25,19 +25,19 @@
         filter: hue-rotate(180deg) saturate(150%);
       }
 
-      h1 { 
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-}
+      h1 {
+        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      }
 
       .typewriter {
-        color: #e0dada;
+        color: #f2edeb;
         font-size: 7.8vmin;
         overflow: hidden;
         border-right: 0.15em solid #3f3;
         white-space: nowrap;
         margin: 0 auto;
-    animation: typing 3.5s steps(40, end) forwards,
-               blink-caret 0.75s step-end infinite;
+        animation: typing 3.5s steps(40, end) forwards,
+          blink-caret 0.75s step-end infinite;
       }
 
       @keyframes typing {
@@ -60,23 +60,23 @@
       }
 
       @media (max-width: 765px) {
-    .typewriter {
-font-size: 5.5vmin
-    }
-    .hero-section .container-fluid {
-        padding: 15px; 
-        margin-top: 15px;
-    }
-}
+        .typewriter {
+          font-size: 5.5vmin;
+        }
+        .hero-section .container-fluid {
+          padding: 15px;
+          margin-top: 15px;
+        }
+      }
 
-@media (min-width: 766px) and (max-width: 1024px) {
-    .typewriter {
-font-size: 3.7vmin
-    }
-    .hero-section .container-fluid {
-        padding: 20px;  
-    }
-}
+      @media (min-width: 766px) and (max-width: 1024px) {
+        .typewriter {
+          font-size: 3.7vmin;
+        }
+        .hero-section .container-fluid {
+          padding: 20px;
+        }
+      }
 
       .cta {
         color: black;
@@ -88,10 +88,6 @@ font-size: 3.7vmin
         background-color: transparent;
         border: 1px solid #3f3;
       }
-
-
-
-      
     </style>
   </head>
   <body>
@@ -121,7 +117,7 @@ font-size: 3.7vmin
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mt-2" id="navbarNavHamburger">
+        <div class="collapse navbar-collapse mt-2" id="navbarNavHamburger" >
           <div lc-helper="shortcode" class="live-shortcode me-auto text-end">
             <!--  lc_nav_menu -->
             <ul id="menu-menu-1" class="navbar-nav">
@@ -151,7 +147,8 @@ font-size: 3.7vmin
       class="hero-section d-flex min-vh-100 pb-4"
       lc-helper="background"
       style="
-        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760) center / cover no-repeat;
+        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760)
+          center / cover no-repeat;
         background-color: #3f3f3f;
         background-blend-mode: overlay;
       "
@@ -164,7 +161,12 @@ font-size: 3.7vmin
             <h1 class="typewriter fw-bolder" id="typewriter">
               Bose QuietComfort Ultra Headphones
             </h1>
-            <img class="img-fluid" srcset="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/673/original/Bose.png?1718117698" />
+            <img
+              class="img-fluid"
+              srcset="
+                https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/673/original/Bose.png?1718117698
+              "
+            />
           </div>
         </div>
 
@@ -189,7 +191,7 @@ font-size: 3.7vmin
             height="4em"
             viewBox="0 0 16 16"
             class="text-light"
-            fill="currentColor"
+fill="#3f3"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -409,38 +411,68 @@ font-size: 3.7vmin
       </div>
     </div>
     <!-- Footer -->
-<section class="footer">
-    <div class="container py-3 my-4 border-top">
+    <section class="footer">
+      <div class="container py-3 my-4 border-top">
         <!-- Use 'text-center' and flex utilities for alignment -->
         <div class="row justify-content-center text-center">
-            <!-- Each column takes full width on small screens, aligns to center -->
-            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center">
-                <a href="https://www.shecodes.io/graduates/86041-satoko-gruson" class="navbar-brand" target="_blank">
-                    <img class="img-fluid me-1" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/682/original/SG_logo.png?1718117779" alt="my brand" style="width: 48px; height: 48px;">
-                </a>
-                <span class="text-muted">© Satoko Gruson</span>
-            </div>
+          <!-- Each column takes full width on small screens, aligns to center -->
+          <div
+            class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+          >
+            <a
+              href="https://www.shecodes.io/graduates/86041-satoko-gruson"
+              class="navbar-brand"
+              target="_blank"
+            >
+              <img
+                class="img-fluid me-1"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/682/original/SG_logo.png?1718117779"
+                alt="my brand"
+                style="width: 48px; height: 48px"
+              />
+            </a>
+            <span class="text-muted">© Satoko Gruson</span>
+          </div>
 
-            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center">
-                <p class="text-body-secondary">
-                    Coded for the 🎧 <a href="https://www.shecodes.io/contests/must-have-accessory-challenge">Must-have Accessory Challenge</a>
-                </p>
-            </div>
+          <div
+            class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+          >
+            <p class="text-body-secondary">
+              Coded for the 🎧
+              <a
+                href="https://www.shecodes.io/contests/must-have-accessory-challenge"
+                >Must-have Accessory Challenge</a
+              >
+            </p>
+          </div>
 
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center gap-3">
-                <a class="text-dark" href="https://www.behance.net/satokogruson" aria-label="Behance">
-                    <i class="bi bi-behance" style="font-size: 1.5rem"></i>
-                </a>
-                <a class="text-dark" href="https://github.com/satokogruson" aria-label="GitHub">
-                    <i class="bi bi-github" style="font-size: 1.5rem"></i>
-                </a>
-                <a class="text-dark" href="https://www.linkedin.com/in/satokogruson/" aria-label="LinkedIn">
-                    <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
-                </a>
-            </div>
+          <div
+            class="col-12 col-md-4 d-flex align-items-center justify-content-center gap-3"
+          >
+            <a
+              class="text-dark"
+              href="https://www.behance.net/satokogruson"
+              aria-label="Behance"
+            >
+              <i class="bi bi-behance" style="font-size: 1.5rem"></i>
+            </a>
+            <a
+              class="text-dark"
+              href="https://github.com/satokogruson"
+              aria-label="GitHub"
+            >
+              <i class="bi bi-github" style="font-size: 1.5rem"></i>
+            </a>
+            <a
+              class="text-dark"
+              href="https://www.linkedin.com/in/satokogruson/"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
+            </a>
+          </div>
         </div>
-    </div>
-</section>
-
+      </div>
+    </section>
   </body>
 </html>
