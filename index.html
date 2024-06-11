@@ -25,10 +25,15 @@
         filter: hue-rotate(180deg) saturate(150%);
       }
 
+      h1 { 
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
       .typewriter {
-        color: #fff;
+        color: #e0dada;
+        font-size: 12.6vmin;
         overflow: hidden;
-        border-right: 0.15em solid rgb(140, 255, 0);
+        border-right: 0.15em solid #3f3;
         white-space: nowrap;
         margin: 0 auto;
     animation: typing 3.5s steps(40, end) forwards,
@@ -50,29 +55,43 @@
           border-color: transparent;
         }
         50% {
-          border-color: rgb(140, 255, 0);
+          border-color: #3f3;
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 765px) {
     .typewriter {
-        font-size: 1.5rem; /* Smaller font for smaller devices */
+font-size: 5.5vmin
     }
     .hero-section .container-fluid {
-        padding: 15px; /* Less padding on smaller screens */
+        padding: 15px; 
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1024px) {
+    .typewriter {
+font-size: 3.7vmin
+    }
+    .hero-section .container-fluid {
+        padding: 20px;  
     }
 }
 
       .cta {
         color: black;
-        background-color: rgb(140, 255, 0);
+        background-color: #3f3;
       }
 
       .cta:hover {
-        color: rgb(140, 255, 0);
+        color: #3f3;
         background-color: transparent;
-        border: 1px solid rgb(140, 255, 0);
+        border: 1px solid #3f3;
       }
+
+
+
+      
     </style>
   </head>
   <body>
@@ -129,7 +148,7 @@
 
     <!-- Hero-->
     <div
-      class="d-flex min-vh-100 pb-4"
+      class="hero-section d-flex min-vh-100 pb-4"
       lc-helper="background"
       style="
         background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760) center / cover no-repeat;
@@ -142,7 +161,7 @@
       >
         <div class="lc-block mb-4">
           <div editable="rich">
-            <h1 class="typewriter display-2 fw-bolder" id="typewriter">
+            <h1 class="typewriter fw-bolder" id="typewriter">
               Bose QuietComfort Ultra Headphones
             </h1>
             <img class="img-fluid" srcset="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/673/original/Bose.png?1718117698" />
