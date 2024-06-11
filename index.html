@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>My must-have Accessory</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +21,10 @@
     />
 
     <style>
+      .logo-white {
+        filter: hue-rotate(180deg) saturate(150%);
+      }
+
       .typewriter {
         color: #fff;
         overflow: hidden;
@@ -63,12 +67,63 @@
     </style>
   </head>
   <body>
-    <!-- Hero-->
-    <div
-      class="d-flex min-vh-100"
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-dark"
       lc-helper="background"
       style="
         background: url(./img/white_BG.jpeg) center / cover no-repeat;
+        background-color: #3f3f3f;
+        background-blend-mode: overlay;
+        padding: 0;
+      "
+    >
+      <div class="container-fluid px-3 py-2">
+        <a href="index.html" class="d-flex align-items-center navbar-brand">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavHamburger"
+          aria-controls="navbarNavHamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2" id="navbarNavHamburger">
+          <div lc-helper="shortcode" class="live-shortcode me-auto text-end">
+            <!--  lc_nav_menu -->
+            <ul id="menu-menu-1" class="navbar-nav">
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"
+              >
+                <a
+                  target="_blank"
+                  href="https://www.bose.com/home"
+                  class="nav-link"
+                  >Go to Bose Shop</a
+                >
+              </li>
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"
+              >
+                <a href="index.html#contact" class="nav-link">Contact Me!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero-->
+    <div
+      class="d-flex min-vh-100 pb-4"
+      lc-helper="background"
+      style="
+        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760) center / cover no-repeat;
         background-color: #3f3f3f;
         background-blend-mode: overlay;
       "
@@ -81,7 +136,7 @@
             <h1 class="typewriter display-2 fw-bolder" id="typewriter">
               Bose QuietComfort Ultra Headphones
             </h1>
-            <img srcset="./img/Bose.png" />
+            <img class="img-fluid" srcset="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/673/original/Bose.png?1718117698" />
           </div>
         </div>
 
@@ -134,7 +189,7 @@
         background-size: cover;
         background-position: center center;
         background-color: #eee;
-        background-image: url(./img/Metallic_BG.jpeg);
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/681/original/Metallic_BG.jpeg?1718117769);
       "
     >
       <div class="container pt-4 pb-4">
@@ -157,7 +212,7 @@
             <div class="lc-block pt-4">
               <img
                 class="img-fluid"
-                src="./img/Bose_img_2.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/674/original/Bose_img_case.png?1718117707"
                 alt="Photo by Bose"
                 loading="lazy"
               />
@@ -167,7 +222,7 @@
             <div class="lc-block mb-2">
               <img
                 class="img-fluid"
-                src="./img/Bose_img_4.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/675/original/Bose_img_folded.png?1718117714"
                 alt="Photo by Bose"
                 loading="lazy"
               />
@@ -198,7 +253,7 @@
             <div class="lc-block mb-2">
               <img
                 class="img-fluid"
-                src="./img/Bose_img_5.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/676/original/Bose_img_side.png?1718117725"
                 alt="Photo by Bose"
                 loading="lazy"
               />
@@ -216,7 +271,7 @@
             <div class="p-5">
               <img
                 class="img-fluid rounded-circle"
-                src="./img/Bose_img_1.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/677/original/Bose_img_woman_1.png?1718117732"
                 alt="..."
               />
             </div>
@@ -243,7 +298,7 @@
             <div class="p-5">
               <img
                 class="img-fluid rounded-circle"
-                src="./img/Bose_img_7.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/678/original/Bose_img_man.png?1718117739"
                 alt="Photo by Bose"
               />
             </div>
@@ -252,7 +307,9 @@
             <div class="p-5">
               <h2 class="display-5">Exceptional Comfort and Build Quality</h2>
               <p>
-Bose designs its headphones with premium materials, ensuring comfort even during extended use. The plush ear cushions and lightweight design make them ideal for long listening sessions.
+                Bose designs its headphones with premium materials, ensuring
+                comfort even during extended use. The plush ear cushions and
+                lightweight design make them ideal for long listening sessions.
               </p>
             </div>
           </div>
@@ -267,7 +324,7 @@ Bose designs its headphones with premium materials, ensuring comfort even during
             <div class="p-5">
               <img
                 class="img-fluid rounded-circle"
-                src="./img/Bose_img_8.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/679/original/Bose_img_woman_2.png?1718117746"
                 alt="Photo by Bose"
               />
             </div>
@@ -276,7 +333,10 @@ Bose designs its headphones with premium materials, ensuring comfort even during
             <div class="p-5">
               <h2 class="display-5">Long Battery Life and Quick Charging</h2>
               <p>
-Bose noise-cancelling headphones feature impressive battery life and a quick charge capability, providing hours of playtime after just a short charge. This ensures uninterrupted music and productivity all day long.
+                Bose noise-cancelling headphones feature impressive battery life
+                and a quick charge capability, providing hours of playtime after
+                just a short charge. This ensures uninterrupted music and
+                productivity all day long.
               </p>
             </div>
           </div>
@@ -294,7 +354,7 @@ Bose noise-cancelling headphones feature impressive battery life and a quick cha
         background-attachment: fixed;
         background-size: cover;
         background-position: center center;
-        background-image: url(./img/Metallic_BG.jpeg);
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/681/original/Metallic_BG.jpeg?1718117769);
       "
     >
       <div class="lc-block my-3 align-self-center w-100 py-5">
@@ -311,6 +371,7 @@ Bose noise-cancelling headphones feature impressive battery life and a quick cha
           <div class="lc-block mt-4">
             <a
               class="cta btn btn-lg"
+              target="_blank"
               href="https://www.bose.com/home"
               role="button"
               >Go to Website</a
@@ -320,69 +381,64 @@ Bose noise-cancelling headphones feature impressive battery life and a quick cha
       </div>
     </div>
     <!-- Footer -->
-
     <section class="footer">
-      <div class="py-5 container bg-light position-relative rounded">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="lc-block mb-4">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-start">
+          <div class="lc-block text-center mb-3 mb-md-0">
+            <a
+              class="navbar-brand"
+              href="https://www.shecodes.io/graduates/86041-satoko-gruson"
+              target="_blank"
+            >
               <img
-                alt="logo"
-                class="img-fluid"
-                src="./img/SG_logo.png"
-                style="height: 10vh"
+                class="img-fluid me-1"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/682/original/SG_logo.png?1718117779"
+                alt="my brand"
+                width="48px"
+                height="48px"
               />
-            </div>
-            <div class="lc-block text-dark mb-2"></div>
-            <div class="lc-block text-dark text-center">
-              <div editable="rich">
-                <p class="text-body-secondary mx-2">
-                  Coded by Satoko Gruson for the 🎧
-                  <a
-                    href="https://www.shecodes.io/contests/must-have-accessory-challenge"
-                    >Must-have Accessory Challenge</a
-                  >
-                </p>
-              </div>
-            </div>
+            </a>
+
+            <span editable="inline" class="text-muted">© Satoko Gruson</span>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 offset-md-3 d-flex justify-content-center">
-            <div class="lc-block text-center text-dark py-5 mx-2">
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="lc-block text-center mb-3 mb-md-0">
+            <p class="text-body-secondary mx-4 mt-3">
+              Coded for the 🎧
               <a
-                class="mx-3 text-dark"
-                href="https://www.behance.net/satokogruson"
-                aria-label="X"
-                ><i class="bi bi-behance" style="font-size: 1.5rem"></i
-              ></a>
-              <a
-                class="mx-3 text-dark"
-                href="https://github.com/satokogruson"
-                aria-label="X"
-                ><i class="bi bi-github" style="font-size: 1.5rem"></i
-              ></a>
-              <a
-                class="mx-3 text-dark"
-                href="https://www.linkedin.com/in/satokogruson/"
-                aria-label="LinkedIn"
-                ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
-              ></a>
-            </div>
+                href="https://www.shecodes.io/contests/must-have-accessory-challenge"
+                >Must-have Accessory Challenge</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 justify-content-end d-flex gap-3">
+          <div class="lc-block">
+            <a
+              class="mx-3 text-dark"
+              href="https://www.behance.net/satokogruson"
+              aria-label="X"
+              ><i class="bi bi-behance" style="font-size: 1.5rem"></i
+            ></a>
+            <a
+              class="mx-3 text-dark"
+              href="https://github.com/satokogruson"
+              aria-label="X"
+              ><i class="bi bi-github" style="font-size: 1.5rem"></i
+            ></a>
+            <a
+              class="mx-3 text-dark"
+              href="https://www.linkedin.com/in/satokogruson/"
+              aria-label="LinkedIn"
+              ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+            ></a>
           </div>
         </div>
       </div>
-      <div
-        class="container-fluid"
-        lc-helper="background"
-        style="
-          height: 30vh;
-          background: url(./img/white_BG.jpeg) center / cover no-repeat;
-          margin-top: -100px;
-          background-color: #3f3f3f;
-          background-blend-mode: overlay;
-        "
-      ></div>
     </section>
   </body>
 </html>
