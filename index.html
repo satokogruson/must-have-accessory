@@ -31,8 +31,8 @@
         border-right: 0.15em solid rgb(140, 255, 0);
         white-space: nowrap;
         margin: 0 auto;
-        animation: typing 3.5s steps(30, end),
-          blink-caret 0.5s step-end infinite;
+    animation: typing 3.5s steps(40, end) forwards,
+               blink-caret 0.75s step-end infinite;
       }
 
       @keyframes typing {
@@ -53,6 +53,15 @@
           border-color: rgb(140, 255, 0);
         }
       }
+
+      @media (max-width: 768px) {
+    .typewriter {
+        font-size: 1.5rem; /* Smaller font for smaller devices */
+    }
+    .hero-section .container-fluid {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+}
 
       .cta {
         color: black;
@@ -381,64 +390,38 @@
       </div>
     </div>
     <!-- Footer -->
-    <section class="footer">
-      <div
-        class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <div class="col-md-4 d-flex align-items-start">
-          <div class="lc-block text-center mb-3 mb-md-0">
-            <a
-              class="navbar-brand"
-              href="https://www.shecodes.io/graduates/86041-satoko-gruson"
-              target="_blank"
-            >
-              <img
-                class="img-fluid me-1"
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/682/original/SG_logo.png?1718117779"
-                alt="my brand"
-                width="48px"
-                height="48px"
-              />
-            </a>
+<section class="footer">
+    <div class="container py-3 my-4 border-top">
+        <!-- Use 'text-center' and flex utilities for alignment -->
+        <div class="row justify-content-center text-center">
+            <!-- Each column takes full width on small screens, aligns to center -->
+            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center">
+                <a href="https://www.shecodes.io/graduates/86041-satoko-gruson" class="navbar-brand" target="_blank">
+                    <img class="img-fluid me-1" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/682/original/SG_logo.png?1718117779" alt="my brand" style="width: 48px; height: 48px;">
+                </a>
+                <span class="text-muted">© Satoko Gruson</span>
+            </div>
 
-            <span editable="inline" class="text-muted">© Satoko Gruson</span>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex align-items-center">
-          <div class="lc-block text-center mb-3 mb-md-0">
-            <p class="text-body-secondary mx-4 mt-3">
-              Coded for the 🎧
-              <a
-                href="https://www.shecodes.io/contests/must-have-accessory-challenge"
-                >Must-have Accessory Challenge</a
-              >
-            </p>
-          </div>
-        </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center">
+                <p class="text-body-secondary">
+                    Coded for the 🎧 <a href="https://www.shecodes.io/contests/must-have-accessory-challenge">Must-have Accessory Challenge</a>
+                </p>
+            </div>
 
-        <div class="col-md-4 justify-content-end d-flex gap-3">
-          <div class="lc-block">
-            <a
-              class="mx-3 text-dark"
-              href="https://www.behance.net/satokogruson"
-              aria-label="X"
-              ><i class="bi bi-behance" style="font-size: 1.5rem"></i
-            ></a>
-            <a
-              class="mx-3 text-dark"
-              href="https://github.com/satokogruson"
-              aria-label="X"
-              ><i class="bi bi-github" style="font-size: 1.5rem"></i
-            ></a>
-            <a
-              class="mx-3 text-dark"
-              href="https://www.linkedin.com/in/satokogruson/"
-              aria-label="LinkedIn"
-              ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
-            ></a>
-          </div>
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center gap-3">
+                <a class="text-dark" href="https://www.behance.net/satokogruson" aria-label="Behance">
+                    <i class="bi bi-behance" style="font-size: 1.5rem"></i>
+                </a>
+                <a class="text-dark" href="https://github.com/satokogruson" aria-label="GitHub">
+                    <i class="bi bi-github" style="font-size: 1.5rem"></i>
+                </a>
+                <a class="text-dark" href="https://www.linkedin.com/in/satokogruson/" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
+                </a>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+
   </body>
 </html>
