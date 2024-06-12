@@ -21,49 +21,49 @@
     />
 
     <style>
-      .logo-white {
-        filter: hue-rotate(180deg) saturate(150%);
+.hero-section {
+    position: relative; 
+    min-height: 100vh; 
+    padding-top: 56px; 
+}
+
+      .neon {
+        font-size: 7vmin;
+      }
+      @keyframes lights {
+        0%,
+        100% {
+          color: hsl(0, 0%, 100%);
+          text-shadow: 0 0 10px hsla(120, 40%, 50%, 0.4),
+            0 0 0.2em hsla(120, 30%, 70%, 0.3),
+            1em -0.125em 0.25em hsla(120, 20%, 50%, 0.2),
+            -1em 0.125em 0.25em hsla(120, 50%, 60%, 0.3);
+        }
+
+        30%,
+        70% {
+          color: hsl(0, 0%, 100%);
+          text-shadow: 0 0 12px hsla(120, 50%, 50%, 0.5),
+            0 0 0.2em hsla(120, 40%, 70%, 0.4),
+            -0.5em -0.125em 0.2em hsla(120, 25%, 60%, 0.3),
+            0.5em 0.125em 0.2em hsla(120, 55%, 60%, 0.4);
+        }
+
+        40% {
+          color: hsl(0, 0%, 100%);
+          text-shadow: 0 0 14px hsla(120, 60%, 50%, 0.6),
+            0 0 0.2em hsla(120, 45%, 90%, 0.5),
+            -0.25em -0.125em 0.1em hsla(120, 35%, 70%, 0.3),
+            0.25em 0.125em 0.1em hsla(120, 55%, 70%, 0.4);
+        }
       }
 
-.neon {
-    font-size: 7vmin;
-}
-@keyframes lights {
-  0%, 100% {
-    color: hsl(0, 0%, 100%); 
-    text-shadow:
-      0 0 10px hsla(120, 40%, 50%, 0.4), 
-      0 0 0.2em hsla(120, 30%, 70%, 0.3),
-      1em -0.125em 0.25em hsla(120, 20%, 50%, 0.2), 
-      -1em 0.125em 0.25em hsla(120, 50%, 60%, 0.3); 
-  }
-  
-  30%, 70% { 
-    color: hsl(0, 0%, 100%);
-    text-shadow:
-      0 0 12px hsla(120, 50%, 50%, 0.5), 
-      0 0 0.2em hsla(120, 40%, 70%, 0.4), 
-      -0.5em -0.125em 0.2em hsla(120, 25%, 60%, 0.3), 
-      0.5em 0.125em 0.2em hsla(120, 55%, 60%, 0.4); 
-  }
-  
-  40% { 
-    color: hsl(0, 0%, 100%);
-    text-shadow:
-      0 0 14px hsla(120, 60%, 50%, 0.6), 
-      0 0 0.2em hsla(120, 45%, 90%, 0.5), 
-      -0.25em -0.125em 0.1em hsla(120, 35%, 70%, 0.3), 
-      0.25em 0.125em 0.1em hsla(120, 55%, 70%, 0.4); 
-  }
-}
-
-.neon {
-  margin: auto;
-  font-size: 4rem;
-  font-weight: 300;
-  animation: lights 5s 750ms linear infinite;
-}
-
+      .neon {
+        margin: auto;
+        font-size: 4rem;
+        font-weight: 300;
+        animation: lights 5s 750ms linear infinite;
+      }
 
       .cta {
         color: black;
@@ -78,118 +78,109 @@
     </style>
   </head>
   <body>
-    <!-- Nav -->
-    <nav
-      class="navbar navbar-dark"
-      lc-helper="background"
-      style="
-        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760) center / cover no-repeat;
-        background-color: rgb(36, 36, 36,0.9);
-        background-blend-mode: overlay;
-        padding: 0;
-      "
-    >
-      <div class="container-fluid px-3 py-2">
-        <a href="index.html" class="d-flex align-items-center navbar-brand">
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavHamburger"
-          aria-controls="navbarNavHamburger"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mt-2" id="navbarNavHamburger" >
-          <div lc-helper="shortcode" class="live-shortcode me-auto text-end">
-            <!--  lc_nav_menu -->
-            <ul id="menu-menu-1" class="navbar-nav">
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"
-              >
-                <a
-                  target="_blank"
-                  href="https://www.bose.com/home"
-                  class="nav-link"
-                  >Go to Bose Shop</a
-                >
-              </li>
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"
-              >
-                <a href="index.html#contact" class="nav-link">Contact Me!</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero-->
     <div
-      class="hero-section d-flex min-vh-100 pb-4"
-      lc-helper="background"
+      class="background-container"
       style="
-        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760)
+        background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/707/original/Black_BG.jpg?1718179957')
           center / cover no-repeat;
-        background-color: rgba(36, 36, 36, 0.9);
-        background-blend-mode: overlay;
+        min-height: 100vh;
       "
     >
-      <div
-        class="align-self-center text-center text-light col-md-8 offset-md-2"
-      >
-        <div class="lc-block mb-4">
-          <div editable="rich">
-            <h1 class="neon fw-bolder" id="typewriter">
-              Bose QuietComfort Ultra Headphones
-            </h1>
-            <img
-              class="img-fluid"
-              srcset="
-                https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/673/original/Bose.png?1718117698
-              "
-            />
-          </div>
-        </div>
+      <!-- Nav -->
+      <nav class="navbar navbar-dark">
+        <div class="container-fluid px-3 py-2">
+          <a href="index.html" class="d-flex align-items-center navbar-brand">
+          </a>
 
-        <div class="lc-block">
-          <div editable="rich">
-            <p class="lead">
-              Immerse yourself in crystal-clear sound with Bose’s cutting-edge
-              noise-cancellation technology.
-            </p>
-
-            <p class="lead">
-              Experience your music, your calls, and your world with
-              unparalleled clarity and peace.
-            </p>
-          </div>
-        </div>
-
-        <div class="lc-block">
-          <svg
-            onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });"
-            width="4em"
-            height="4em"
-            viewBox="0 0 16 16"
-            class="text-light"
-fill="#3f3"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavHamburger"
+            aria-controls="navbarNavHamburger"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <path
-              fill-rule="evenodd"
-              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-            ></path>
-            <path
-              fill-rule="evenodd"
-              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-            ></path>
-          </svg>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-2" id="navbarNavHamburger">
+            <div lc-helper="shortcode" class="live-shortcode me-auto text-end">
+              <!--  lc_nav_menu -->
+              <ul id="menu-menu-1" class="navbar-nav">
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"
+                >
+                  <a
+                    target="_blank"
+                    href="https://www.bose.com/home"
+                    class="nav-link"
+                    >Go to Bose Shop</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"
+                >
+                  <a href="index.html#contact" class="nav-link">Contact Me!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero-->
+      <div class="hero-section d-flex min-vh-100 pb-4">
+        <div
+          class="align-self-center text-center text-light col-md-8 offset-md-2"
+        >
+          <div class="lc-block mb-4">
+            <div editable="rich">
+              <h1 class="neon fw-bolder" id="typewriter">
+                Bose QuietComfort Ultra Headphones
+              </h1>
+              <img
+                class="img-fluid"
+                srcset="
+                  https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/673/original/Bose.png?1718117698
+                "
+              />
+            </div>
+          </div>
+
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="lead">
+                Immerse yourself in crystal-clear sound with Bose’s cutting-edge
+                noise-cancellation technology.
+              </p>
+
+              <p class="lead">
+                Experience your music, your calls, and your world with
+                unparalleled clarity and peace.
+              </p>
+            </div>
+          </div>
+
+          <div class="lc-block">
+            <svg
+              onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });"
+              width="4em"
+              height="4em"
+              viewBox="0 0 16 16"
+              class="text-light"
+              fill="#3f3"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -206,18 +197,18 @@ fill="#3f3"
         background-size: cover;
         background-position: center center;
         background-color: #eee;
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/681/original/Metallic_BG.jpeg?1718117769);
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/680/original/white_BG.jpeg?1718117760);
       "
     >
       <div class="container pt-4 pb-4">
         <div class="row">
           <div class="col-md-4">
-            <div class="lc-block text-white">
+            <div class="lc-block text-dark">
               <div editable="rich">
                 <p>My favorite headphones</p>
               </div>
             </div>
-            <div class="lc-block border-bottom pb-4 text-white">
+            <div class="lc-block border-bottom border-dark pb-4 text-dark">
               <div editable="rich">
                 <h1>
                   Bose<br />
@@ -246,7 +237,7 @@ fill="#3f3"
             </div>
             <div class="lc-block">
               <div editable="rich">
-                <p class="text-white">
+                <p class="text-dark">
                   The first time I used the Bose Quiet Comfort headphones on a
                   noisy flight, everything changed. The engine's drone faded,
                   allowing the pure sound of my playlist to resonate clearly.
@@ -258,7 +249,7 @@ fill="#3f3"
           <div class="col-md-4">
             <div class="lc-block">
               <div editable="rich">
-                <p class="text-white">
+                <p class="text-dark">
                   These headphones have become essential for daily life. Whether
                   navigating crowded streets or enjoying late-night movies, they
                   deliver crystal-clear audio and comfort. They enrich every
